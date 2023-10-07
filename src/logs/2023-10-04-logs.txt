@@ -1,16 +1,4 @@
-====================ERROR 4/10/2023, 12:14:00 a. m.=========================
-req: GET /api/v1/users body: {} 
+====================ERROR 4/10/2023, 20:35:38=========================
+req: POST /api/v1/messages/conversation/10 body: {"content":"Holiiii","senderId":6} 
 res: status: 401, {"message":"No authorization header"} 
-
-====================ERROR 4/10/2023, 12:22:12 a. m.=========================
-req: GET /api/v1/users body: {} 
-res: status: 401, {"message":"No authorization header"} 
-
-====================ERROR 4/10/2023, 9:24:42 p. m.=========================
-req: POST /api/v1/users/login body: {"email":"ian.rosasmal@gmail.com","password":"Academlo123@"} 
-res: status: undefined, {"name":"SequelizeDatabaseError","parent":{"length":106,"name":"error","severity":"ERROR","code":"42P01","position":"129","file":"parse_relation.c","line":"1395","routine":"parserOpenTable","sql":"SELECT \"id\", \"firstname\", \"lastname\", \"email\", \"avatar\", \"password\", \"description\", \"validEmail\", \"createdAt\", \"updatedAt\" FROM \"Users\" AS \"User\" WHERE \"User\".\"email\" = 'ian.rosasmal@gmail.com' LIMIT 1;"},"original":{"length":106,"name":"error","severity":"ERROR","code":"42P01","position":"129","file":"parse_relation.c","line":"1395","routine":"parserOpenTable","sql":"SELECT \"id\", \"firstname\", \"lastname\", \"email\", \"avatar\", \"password\", \"description\", \"validEmail\", \"createdAt\", \"updatedAt\" FROM \"Users\" AS \"User\" WHERE \"User\".\"email\" = 'ian.rosasmal@gmail.com' LIMIT 1;"},"sql":"SELECT \"id\", \"firstname\", \"lastname\", \"email\", \"avatar\", \"password\", \"description\", \"validEmail\", \"createdAt\", \"updatedAt\" FROM \"Users\" AS \"User\" WHERE \"User\".\"email\" = 'ian.rosasmal@gmail.com' LIMIT 1;","parameters":{}} 
-
-====================ERROR 4/10/2023, 9:26:06 p. m.=========================
-req: POST /api/v1/users body: {"firstname":"Siria","lastname":"JImenez","email":"siria@gmail.com","password":"Academlo123@"} 
-res: status: undefined, {"name":"SequelizeDatabaseError","parent":{"length":105,"name":"error","severity":"ERROR","code":"42P01","position":"13","file":"parse_relation.c","line":"1395","routine":"parserOpenTable","sql":"INSERT INTO \"Users\" (\"id\",\"firstname\",\"lastname\",\"email\",\"password\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6) RETURNING \"id\",\"firstname\",\"lastname\",\"email\",\"avatar\",\"password\",\"description\",\"validEmail\",\"createdAt\",\"updatedAt\";","parameters":["Siria","JImenez","siria@gmail.com","$2b$10$n3AwTssG3MUZk/2dSIMGvOLOSnoxupfcbZ3IsKDe7mpN/cpkoIdqK","2023-10-05 02:26:05.184 +00:00","2023-10-05 02:26:05.184 +00:00"]},"original":{"length":105,"name":"error","severity":"ERROR","code":"42P01","position":"13","file":"parse_relation.c","line":"1395","routine":"parserOpenTable","sql":"INSERT INTO \"Users\" (\"id\",\"firstname\",\"lastname\",\"email\",\"password\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6) RETURNING \"id\",\"firstname\",\"lastname\",\"email\",\"avatar\",\"password\",\"description\",\"validEmail\",\"createdAt\",\"updatedAt\";","parameters":["Siria","JImenez","siria@gmail.com","$2b$10$n3AwTssG3MUZk/2dSIMGvOLOSnoxupfcbZ3IsKDe7mpN/cpkoIdqK","2023-10-05 02:26:05.184 +00:00","2023-10-05 02:26:05.184 +00:00"]},"sql":"INSERT INTO \"Users\" (\"id\",\"firstname\",\"lastname\",\"email\",\"password\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5,$6) RETURNING \"id\",\"firstname\",\"lastname\",\"email\",\"avatar\",\"password\",\"description\",\"validEmail\",\"createdAt\",\"updatedAt\";","parameters":["Siria","JImenez","siria@gmail.com","$2b$10$n3AwTssG3MUZk/2dSIMGvOLOSnoxupfcbZ3IsKDe7mpN/cpkoIdqK","2023-10-05 02:26:05.184 +00:00","2023-10-05 02:26:05.184 +00:00"]} 
 

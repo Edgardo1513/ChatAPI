@@ -154,3 +154,47 @@ res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","exp
 req: GET /api/v1/conversations/6 body: {} 
 res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-03T23:41:24.000Z"} 
 
+====================ERROR 3/10/2023, 20:35:43=========================
+req: POST /upload body: {} 
+res: status: undefined, {"name":"MulterError","message":"File too large","code":"LIMIT_FILE_SIZE","field":"avatar","storageErrors":[]} 
+
+====================ERROR 3/10/2023, 20:38:43=========================
+req: POST /upload body: {} 
+res: status: undefined, {"name":"MulterError","message":"File too large","code":"LIMIT_FILE_SIZE","field":"avatar","storageErrors":[]} 
+
+====================ERROR 3/10/2023, 20:52:01=========================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+====================ERROR 3/10/2023, 20:52:23=========================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+====================ERROR 3/10/2023, 20:54:49=========================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+====================ERROR 3/10/2023, 20:56:10=========================
+req: POST /upload body: {} 
+res: status: 400, {"error":"File not accepted","message":"Only images files are allowed","storageErrors":[]} 
+
+====================ERROR 3/10/2023, 21:51:55=========================
+req: PUT /api/v1/users/6 body: {} 
+res: status: 401, {"message":"No authorization header"} 
+
+====================ERROR 3/10/2023, 21:54:11=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T00:51:55.000Z"} 
+
+====================ERROR 3/10/2023, 21:54:11=========================
+req: GET /api/v1/users body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T00:51:55.000Z"} 
+
+====================ERROR 3/10/2023, 21:54:11=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T00:51:55.000Z"} 
+
+====================ERROR 3/10/2023, 21:54:11=========================
+req: GET /api/v1/conversations/6 body: {} 
+res: status: undefined, {"name":"TokenExpiredError","message":"jwt expired","expiredAt":"2023-10-04T00:51:55.000Z"} 
+
