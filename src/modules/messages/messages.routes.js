@@ -2,8 +2,8 @@ const { Router } = require("express");
 const {
   createConversationMessage,
   getConversationMessages,
-} = require("./messages.controllers.js");
-const authenticate = require("../../middlewares/auth.middleware.js");
+} = require("./messages.controllers");
+const authenticate = require("../../middlewares/auth.middleware");
 
 const router = Router();
 

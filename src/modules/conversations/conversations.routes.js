@@ -3,8 +3,8 @@ const {
   createConversation,
   createGroupConversation,
   getAllConversations,
-} = require("./conversations.controllers.js");
-const authenticate = require("../../middlewares/auth.middleware.js");
+} = require("./conversations.controllers");
+const authenticate = require("../../middlewares/auth.middleware");
 
 const router = Router();
 

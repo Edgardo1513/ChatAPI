@@ -7,27 +7,15 @@ const {
   getAllUsers,
   uploadAvatar,
 } = require("./user.controllers");
-const authenticate = require("../../middlewares/auth.middleware.js");
+const authenticate = require("../../middlewares/auth.middleware");
 const { registerUserValidator, loginValidatior } = require("./user.validators");
-const upload = require("../../middlewares/imageUpload.middleware.js");
+const upload = require("../../middlewares/imageUpload.middleware");
 const router = Router();
 
 router
   .route("/") // api/v1/users
   .get(authenticate, getAllUsers)
-  .post(registerUserValidator, registerUser)
-  .get(async (req, res, next) => {
-    try {
-      const result = await User.findAll({
-        include: {
-          model: Participant,
-        },
-      });
-      res.json(result);
-    } catch (error) {
-      next(error);
-    }
-  });
+  .post(registerUserValidator, registerUser);
 
 router.put("/:id", authenticate, upload.single("avatar"), uploadAvatar);
 

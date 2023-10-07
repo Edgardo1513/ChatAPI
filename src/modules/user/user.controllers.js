@@ -1,7 +1,7 @@
 const { User } = require("../../models");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { signAuthToken } = require("../../helpers/signToken.js");
+const { signAuthToken } = require("../../helpers/signToken");
 require("dotenv").config();
 
 const getAllUsers = async (req, res, next) => {
